@@ -3,7 +3,13 @@
 
 > **System Overview**: End-to-end industrial architecture connecting physical tire-building machines (Siemens S7-1200 / S7-300 / Allen-Bradley) to an enterprise SQL Server database via KEPServerEX 6 and 32-bit ODBC Driver 17. The pipeline physically interlocks pneumatic conveyors to prevent recipe mismatches, expired rubber, or unscanned materials from entering production machines.
 
+
 ---
+
+## ⚙️ KEPServerEX Project Configuration
+
+* **[kepware_tread_interlock_project.json](./kepware_tread_interlock_project.json)**: Ready-to-import KEPServerEX 6 project configuration file. Contains the complete channel configurations (Siemens S7-1200, S7-300, Allen-Bradley ControlLogix, and ODBC Stored Procedure Client), device tags, and _AdvancedTags Link Tag groups (EXECUTE, Block_output_link, Mch_code_link).
+
 # Master Technical Guide: Industrial PLC – KEPServerEX – SQL Server Data Pipeline
 
 ## 1. System Architecture & 360-Degree End-to-End Overview
@@ -294,5 +300,6 @@ The following table documents all plant machine codes designated for integration
 | **TRGD Series** | 5 | `TRGD10`, `TRGD11`, `TRGD12`, `TRGD19`, `TRGD20` |
 | **TRGH Series** | 3 | `TRGH7`, `TRGH8`, `TRGH9` |
 | **System / Auxiliary** | 2 | `RM301`, `MES1` |
+
 
 

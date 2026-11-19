@@ -1,7 +1,7 @@
-﻿# Secrets & Configs
+﻿# Secrets & Raw Dumps
 .env
 *.env
-*.json
+bckup*.json
 *.pdf
 
 # System & IDE
